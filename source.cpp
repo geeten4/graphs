@@ -6,6 +6,19 @@ using namespace linked_list;
 using namespace graph;
 using namespace heap;
 
+/*
+ * simple graph algorithm library
+ * implemented the Dijsktra algortihm and Minimal spanning tree algorithm
+ * to create a graph, use ShortestPathGraph instance
+ * to add an edge to the graph, on this instance use the addEdge(int, int, float) method
+ * a vertex is uniquely defined by its number
+ * addEdge(vertex number, vertex number, weight of the edge between these two vertices)
+ * Dijsktra algortihm under Dijsktra(int, int) method
+ * minimal spanning tree algorithm under minimalSpanningTree() method
+ * 
+ * for visualization use for example https://graphonline.ru/en/?graph=weightedGraph
+ */
+
 int main()
 {
     ShortestPathGraph graph = ShortestPathGraph();
@@ -26,6 +39,10 @@ int main()
     graph.addEdge(6, 9, 6);
     graph.addEdge(7, 9, 8);
     graph.addEdge(8, 9, 13);
-    ShortestPathGraph* tree = graph.minimalSpanningTree();
-    tree->print();
+    
+    // ShortestPathGraph* tree = graph.minimalSpanningTree();
+    // tree->print();
+    
+    ShortestPathList* list = graph.Dijkstra(0, 9);
+    list->print();
 }
