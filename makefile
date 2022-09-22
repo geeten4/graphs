@@ -1,6 +1,5 @@
-NAME=source
-# OBJFILES=$(NAME).o linkedList.o linkedListNode.o vertex.o
-OBJFILES=$(NAME).o vertex.o shortestPathNode.o shortestPathVertex.o shortestPathEdge.o shortestPathGraph.o shortestPathList.o
+NAME=graphs
+OBJFILES=$(NAME).o vertex.o shortestPathNode.o shortestPathVertex.o shortestPathEdge.o shortestPathGraph.o shortestPathList.o program.o
 
 CC=g++
 CFLAGS= -std=c++11 -pedantic -Wall -Wextra -g

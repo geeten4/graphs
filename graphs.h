@@ -9,3 +9,8 @@
 #include "shortestPathGraph.h"
 #include "minHeap.h"
 #include "shortestPathList.h"
+#include "program.h"
+#include "iostream"
+#include <fstream>
+#include <sstream>
+#include <string.h>

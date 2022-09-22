@@ -1,10 +1,20 @@
+graphs.o: graphs.cpp graphs.h edge.h edge.tpp weightedEdge.h vertex.h \
+ weightedEdge.tpp linkedList.h linkedListNode.h linkedListNode.tpp \
+ linkedList.tpp adjacencyNode.h adjacencyNode.tpp shortestPath.h \
+ adjacencyList.h adjacencyList.tpp shortestPathGraph.h shortestPathList.h \
+ minHeap.h minHeap.tpp program.h
+program.o: program.cpp program.h shortestPathGraph.h adjacencyList.h \
+ adjacencyNode.h linkedList.h linkedListNode.h linkedListNode.tpp \
+ vertex.h linkedList.tpp adjacencyNode.tpp adjacencyList.tpp \
+ shortestPath.h weightedEdge.h edge.h edge.tpp weightedEdge.tpp \
+ shortestPathList.h minHeap.h minHeap.tpp
 shortestPathEdge.o: shortestPathEdge.cpp shortestPath.h weightedEdge.h \
  edge.h edge.tpp vertex.h weightedEdge.tpp
 shortestPathGraph.o: shortestPathGraph.cpp shortestPathGraph.h \
  adjacencyList.h adjacencyNode.h linkedList.h linkedListNode.h \
  linkedListNode.tpp vertex.h linkedList.tpp adjacencyNode.tpp \
  adjacencyList.tpp shortestPath.h weightedEdge.h edge.h edge.tpp \
- weightedEdge.tpp
+ weightedEdge.tpp shortestPathList.h minHeap.h minHeap.tpp
 shortestPathList.o: shortestPathList.cpp shortestPathList.h linkedList.h \
  linkedListNode.h linkedListNode.tpp vertex.h linkedList.tpp \
  shortestPath.h weightedEdge.h edge.h edge.tpp weightedEdge.tpp
@@ -12,9 +22,4 @@ shortestPathNode.o: shortestPathNode.cpp shortestPath.h weightedEdge.h \
  edge.h edge.tpp vertex.h weightedEdge.tpp
 shortestPathVertex.o: shortestPathVertex.cpp shortestPath.h \
  weightedEdge.h edge.h edge.tpp vertex.h weightedEdge.tpp
-source.o: source.cpp source.h edge.h edge.tpp weightedEdge.h vertex.h \
- weightedEdge.tpp linkedList.h linkedListNode.h linkedListNode.tpp \
- linkedList.tpp adjacencyNode.h adjacencyNode.tpp shortestPath.h \
- adjacencyList.h adjacencyList.tpp shortestPathGraph.h minHeap.h \
- minHeap.tpp shortestPathList.h
 vertex.o: vertex.cpp vertex.h

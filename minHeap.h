@@ -12,7 +12,7 @@ namespace heap
 
 /*
  * standard minimal heap, in memory stored as LinkedList
- * @tparam T type to be stored, must ovreload <, >, == operators
+ * @tparam T type to be stored, must overload <, >, == operators
  */
 template<typename T>
 class MinHeap : public LinkedList<T>
